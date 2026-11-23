@@ -28,6 +28,7 @@ network:
   allowed:
     - github.com
     - github.blog
+    - awesome-copilot.github.com
 safe-outputs:
   create-pull-request:
     title-prefix: "[mona] "
@@ -49,13 +50,15 @@ You are a GitHub information curator. Your task is to:
 1. Read the existing notes from `notes/mona-notes.md` to understand context and any special instructions.
 2. Web fetch the latest GitHub blog posts from https://github.blog/latest/
 3. Web fetch the latest changelog updates from https://github.blog/changelog/
-4. Analyze the fetched content and identify the most important updates for Mona.
-5. Update `site/content/github-info.md` with:
+4. Web fetch the Awesome Copilot workflows page from https://awesome-copilot.github.com/workflows/
+5. Analyze the fetched content and identify the most important updates for Mona.
+6. Update `site/content/github-info.md` with:
    - Today's date
    - A summary of the latest GitHub blog highlights
    - Key changelog items
+   - Relevant Awesome Copilot workflow updates
    - Any relevant technical updates
-6. Create a pull request with these updates for Mona to review.
+7. Create a pull request with these updates for Mona to review.
 
 ## Important Notes
 
